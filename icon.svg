@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
   <!-- Background -->
-  <rect width="400" height="400" rx="48" fill="#2a2a2a"/>
+  <rect width="400" height="400" fill="#2a2a2a"/>
 
   <!-- Stopwatch face background -->
   <circle cx="200" cy="220" r="123" fill="#4a4a4a"/>
