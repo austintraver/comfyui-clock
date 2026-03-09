@@ -1,0 +1,13 @@
+[project]
+name = "comfyui-clock"
+description = "Live elapsed timer in the ComfyUI menu bar while your workflow runs"
+version = "1.0.0"
+license = { text = "MIT" }
+
+[project.urls]
+Repository = "https://github.com/austintraver/comfyui-clock"
+
+[tool.comfy]
+PublisherId = "austintraver"
+DisplayName = "ComfyUI Clock"
+Icon = ""
