@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Background -->
+  <rect width="400" height="400" rx="48" fill="#2a2a2a"/>
+
+  <!-- Stopwatch face background -->
+  <circle cx="200" cy="220" r="123" fill="#4a4a4a"/>
+
+  <!-- Stopwatch body -->
+  <circle cx="200" cy="220" r="130" fill="none" stroke="#ffffff" stroke-width="14"/>
+
+  <!-- Top button -->
+  <rect x="188" y="62" width="24" height="36" rx="7" fill="#ffffff"/>
+
+  <!-- Button base / crown -->
+  <rect x="180" y="88" width="40" height="10" rx="4" fill="#ffffff"/>
+
+  <!-- Side button -->
+  <path d="M310 150 L338 132 L342 140 L314 158 Z" fill="#ffffff"/>
+
+  <!--
+    All ticks computed with center=(200,220), r=130.
+    Outer end at r=122 (just inside circle stroke).
+    Major ticks (12,3,6,9): inner end at r=98 (24px).
+    Minor ticks: inner end at r=106 (16px).
+    Formula: x = 200 + r*sin(a), y = 220 - r*cos(a)
+  -->
+
+  <!-- Major ticks (12, 3, 6, 9) -->
+  <line x1="200" y1="98"  x2="200" y2="122" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+  <line x1="322" y1="220" x2="298" y2="220" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+  <line x1="200" y1="342" x2="200" y2="318" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+  <line x1="78"  y1="220" x2="102" y2="220" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Minor ticks -->
+  <!-- 1 o'clock (30deg): sin=0.5, cos=0.866 -->
+  <line x1="261" y1="114" x2="253" y2="128" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <!-- 2 o'clock (60deg): sin=0.866, cos=0.5 -->
+  <line x1="306" y1="159" x2="292" y2="167" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <!-- 4 o'clock (120deg): sin=0.866, cos=-0.5 -->
+  <line x1="306" y1="281" x2="292" y2="273" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <!-- 5 o'clock (150deg): sin=0.5, cos=-0.866 -->
+  <line x1="261" y1="326" x2="253" y2="312" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <!-- 7 o'clock (210deg): sin=-0.5, cos=-0.866 -->
+  <line x1="139" y1="326" x2="147" y2="312" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <!-- 8 o'clock (240deg): sin=-0.866, cos=-0.5 -->
+  <line x1="94"  y1="281" x2="108" y2="273" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <!-- 10 o'clock (300deg): sin=-0.866, cos=0.5 -->
+  <line x1="94"  y1="159" x2="108" y2="167" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <!-- 11 o'clock (330deg): sin=-0.5, cos=0.866 -->
+  <line x1="139" y1="114" x2="147" y2="128" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Stopwatch hand (tapered) -->
+  <polygon points="194,220 206,220 200,140" fill="#ffffff"/>
+
+  <!-- Center dot -->
+  <circle cx="200" cy="220" r="9" fill="#ffffff"/>
+</svg>
