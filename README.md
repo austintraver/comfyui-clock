@@ -18,7 +18,15 @@ https://github.com/user-attachments/assets/c79711b1-c77a-4206-8d5c-f9a39542199b
 
 ## Installation
 
-### ComfyUI Manager (recommended)
+### Comfy CLI (recommended)
+
+```bash
+comfy node install clock
+```
+
+You can also find it on the [ComfyUI Registry](https://registry.comfy.org/publishers/austintraver/nodes/clock).
+
+### ComfyUI Manager
 
 Search for `comfyui-clock` in the Custom Nodes section and install it from there.
 
