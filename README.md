@@ -5,6 +5,12 @@ A live elapsed timer in the ComfyUI menu bar. Shows you how long your workflow h
 <!-- If you have a screenshot or GIF, drop it here: -->
 <!-- ![comfyui-clock screenshot](screenshot.png) -->
 
+
+
+https://github.com/user-attachments/assets/c79711b1-c77a-4206-8d5c-f9a39542199b
+
+
+
 ## Features
 
 - Displays a `⏱ 0:00` timer in the top menu bar as soon as a workflow starts executing
